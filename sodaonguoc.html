@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <body>
+        Nhập vào một số <br>
+        <input type="text" id="nhapso"><br>
+        Số sau khi đảo ngược <br>
+        <input type="text" id="sochuyendoi">
+        <button type="button" onclick="chuyendoi()">Change</button>
+        <script>
+            function chuyendoi() {
+                let a = document.getElementById("nhapso").value;
+                let b = parseInt(a / 10);
+                let c;
+                let sodaonguoc = "";
+                while (b != 0) {
+                    c = a % 10;
+                    sodaonguoc += c;
+                    a = b;
+                    b = parseInt(a / 10);
+                }
+                c = a % 10;
+                sodaonguoc += c;
+                document.getElementById("sochuyendoi").value = sodaonguoc;
+            }
+        </script>
+    </body>
+</body>
+
+</html>

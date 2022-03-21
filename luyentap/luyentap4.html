@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = 3;
+        let fn;
+        let fn1 = 1;
+        let fn2 = 1;
+        while (n > 0) {
+            fn = fn1 + fn2;
+            if (fn % 5 == 0) {
+                alert("Số đầu tiên trong dãy fibonacci chia hết cho 5 là " + fn);
+                break;
+            }
+            fn1 = fn2;
+            fn2 = fn;
+            n++;
+        }
+    </script>
+
+</body>
+
+</html>

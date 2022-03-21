@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập vào giá trị nhỏ hơn (a): ");
+        let b = +prompt("Nhập vào giá trị lớn hơn (b): ");
+        let n;
+        let tong = 0;
+        for (n = a; n <= b; n++) {
+            tong += n;
+        }
+        alert("Tổng các số nằm trong khoảng " + a + " và " + b + " là " + tong);
+    </script>
+</body>
+
+</html>
